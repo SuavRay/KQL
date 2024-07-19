@@ -1,0 +1,8 @@
+<b>Get File Events based on a Hostnmae</b>
+// Define the host you want to investigate
+DeviceFileEvents
+| where DeviceName == "${WORKSTATION HOSTNAME}"
+ 
+DeviceInfo
+
+--------------------------------------------------------
