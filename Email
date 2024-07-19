@@ -1,0 +1,6 @@
+//Find email events that were not blocked by a sender//
+EmailEvents
+| where SenderFromAddress == "<SENDER_ADDRESS>"
+| where DeliveryAction != "Blocked"
+
+-------------------------------------------------------------------
