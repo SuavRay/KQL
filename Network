@@ -1,0 +1,6 @@
+// Filter for RDP traffic (port 3389)
+DeviceNetworkEvents
+| where DeviceName == "${HOSTNAME}"
+| where RemotePort == 3389 // Filter for RDP traffic (port 3389)
+
+-----------------------------------------------------------------
